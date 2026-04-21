@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# qwanadate (PROTOTYPE)
+# qwanadate (PROTOTYPE) <img src="man/figures/logo.png" align="right" height="136" alt="" />
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -15,6 +15,13 @@ anatomical images analysed with the qwanamiz Python package.
 The app is currently a prototype.
 
 ## Installation
+
+The app is not yet entirely packaged. You can download the following R
+script :
+
+[qwanadate_app](https://github.com/SamBcht/qwanadate/blob/ec0b8fdb6593d237f9bc30337a98b05385b59d75/R/qwanadate_app.R)
+
+Then open and run it in R or RStudio
 
 You can install the development version of qwanadate from
 [GitHub](https://github.com/) with:
@@ -52,7 +59,7 @@ up-to-date. `devtools::build_readme()` is handy for this.
 
 You can also embed plots, for example:
 
-<img src="man/figures/README-qwanadate-1.PNG" alt="" width="300px" />
+<img src="man/figures/README-qwanadate-1.PNG" alt="" width="800px" />
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.

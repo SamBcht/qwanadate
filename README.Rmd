@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# qwanadate (PROTOTYPE)
+# qwanadate (PROTOTYPE) <img src="man/figures/logo.png" align="right" height="136" alt="" />
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -27,6 +27,11 @@ anatomical images analysed with the qwanamiz Python package.
 The app is currently a prototype. 
 
 ## Installation
+The app is not yet entirely packaged. You can download the following R script :
+
+[qwanadate_app](https://github.com/SamBcht/qwanadate/blob/ec0b8fdb6593d237f9bc30337a98b05385b59d75/R/qwanadate_app.R)
+
+Then open and run it in R or RStudio
 
 You can install the development version of qwanadate from [GitHub](https://github.com/) with:
 
@@ -54,7 +59,7 @@ You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-da
 
 You can also embed plots, for example:
 
-```{r, echo=FALSE, out.width="300px"}
+```{r, echo=FALSE, out.width="800px"}
 knitr::include_graphics("man/figures/README-qwanadate-1.PNG")
 ```
 
