@@ -19,7 +19,7 @@ The app is currently a prototype.
 The app is not yet entirely packaged. You can download the following R
 script :
 
-[qwanadate_app](https://github.com/SamBcht/qwanadate/blob/ec0b8fdb6593d237f9bc30337a98b05385b59d75/R/qwanadate_app.R)
+[qwanadate_app](https://github.com/SamBcht/qwanadate/blob/6399f23d712aca2f03e1755e18dd3afe54544f52/inst/app/qwanadate_app.R)
 
 Then open and run it in R or RStudio
 
@@ -29,6 +29,12 @@ You can install the development version of qwanadate from
 ``` r
 # install.packages("devtools")
 devtools::install_github("SamBcht/qwanadate")
+```
+
+And launch the app with :
+
+``` r
+# run_qwanadate()
 ```
 
 ## Example
