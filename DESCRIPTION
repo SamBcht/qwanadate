@@ -1,8 +1,10 @@
 Package: qwanadate
 Type: Package
-Title: Quantitative Wood Anatomy dating
+Title: Quantitative Wood Anatomy crossdating
 Version: 0.1.0
-Author: person("Samuel", "Bouchut", , "Samuel.Bouchut@uqat.ca", role = c("aut", "cre"))
+Authors@R: person("Samuel", "Bouchut",
+                    email = "Samuel.Bouchut@uqat.ca", 
+                    role = c("aut", "cre"))
 Maintainer: Samuel Bouchut <Samuel.Bouchut@uqat.ca>
 Description: Shiny application to interactively date tree-rings in QWA images.
     qwanadate is an interactive app designed to help absolute dating of wood 

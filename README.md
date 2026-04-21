@@ -33,11 +33,6 @@ devtools::install_github("SamBcht/qwanadate")
 
 ## Example
 
-``` r
-library(qwanadate)
-## basic example code
-```
-
 Main crossdating window of qwanadate :
 
 <img src="man/figures/README-qwanadate-1.PNG" alt="" width="800px" />
@@ -49,10 +44,8 @@ The app requires two types of input data:
 ### 1. Anatomical ring data
 
 - A **base directory** containing one or more QWAnamiz output folders  
-
-- Each folder must follow the pattern:
-
-- Inside these folders, the app expects files named:
+- Each folder must follow the pattern: `<TreeID>..._outputs/`
+- Inside these folders, the app expects files named: `*_rings.csv`
 
 These files are automatically detected after entering the **Tree ID**
 and selecting the base directory.
@@ -63,15 +56,13 @@ and selecting the base directory.
 
 A ring-width file in one of the following formats:
 
-- `.csv` file containing:
+1.  `.csv` file containing:
 
 - `year` → calendar year  
-
 - `TRW` → ring width values  
-
 - `Tree.ID` → tree identifier (optional but recommended)
 
-- `.rwl` file (standard dendro format)
+2.  `.rwl` file (standard dendro format)
 
 The user must also specify the **unit scaling** of the TRW values
 (e.g. mm, µm).
@@ -96,3 +87,12 @@ selection.
 3.  Load **reference TRW file**  
 4.  Click **“Search files”**  
 5.  Run crossdating
+6.  Switch to the **Manual Crossdating** window and correct the
+    crossdating Anatomical segments can be moved to the desired calendar
+    year by clicking on the corresponding bar on the profile plot.
+    Alternatively they can be moved by using the `Crossdating` drop-down
+    menu on the left
+7.  Create the anatomical chronology and verify the alignment under the
+    `Validation` window
+8.  Specify the place to store the output file and save with the
+    drop-down menu on the left
