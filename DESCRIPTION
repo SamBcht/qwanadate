@@ -1,12 +1,13 @@
 Package: qwanadate
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Quantitative Wood Anatomy dating
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: person("Samuel", "Bouchut", , "Samuel.Bouchut@uqat.ca", role = c("aut", "cre"))
+Maintainer: Samuel Bouchut <Samuel.Bouchut@uqat.ca>
+Description: Shiny application to interactively date tree-rings in QWA images.
+    qwanadate is an interactive app designed to help absolute dating of wood 
+    anatomical images analysed with the qwanamiz Python package.
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Imports: 
