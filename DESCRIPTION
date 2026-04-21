@@ -21,3 +21,5 @@ Imports:
     stringr,
     tibble,
     tidyr
+URL: https://github.com/SamBcht/qwanadate
+BugReports: https://github.com/SamBcht/qwanadate/issues
