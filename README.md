@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# qwanadate
+# qwanadate (PROTOTYPE)
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -11,6 +11,8 @@ date tree-rings in QWA images
 
 qwanadate is an interactive app designed to help absolute dating of wood
 anatomical images analysed with the qwanamiz Python package.
+
+The app is currently a prototype.
 
 ## Installation
 
@@ -50,7 +52,7 @@ up-to-date. `devtools::build_readme()` is handy for this.
 
 You can also embed plots, for example:
 
-<img src="man/figures/README-pressure-1.png" alt="" width="100%" />
+<img src="man/figures/README-qwanadate-1.PNG" alt="" width="300px" />
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.

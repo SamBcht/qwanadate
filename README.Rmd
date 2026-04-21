@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# qwanadate
+# qwanadate (PROTOTYPE)
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -24,7 +24,7 @@ Shiny application to interactively date tree-rings in QWA images
 qwanadate is an interactive app designed to help absolute dating of wood 
 anatomical images analysed with the qwanamiz Python package.
 
-
+The app is currently a prototype. 
 
 ## Installation
 
@@ -54,8 +54,8 @@ You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-da
 
 You can also embed plots, for example:
 
-```{r pressure, echo = FALSE}
-plot(pressure)
+```{r, echo=FALSE, out.width="300px"}
+knitr::include_graphics("man/figures/README-qwanadate-1.PNG")
 ```
 
 In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
