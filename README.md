@@ -33,33 +33,66 @@ devtools::install_github("SamBcht/qwanadate")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library(qwanadate)
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
+Main crossdating window of qwanadate :
 
 <img src="man/figures/README-qwanadate-1.PNG" alt="" width="800px" />
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+## Required inputs
+
+The app requires two types of input data:
+
+### 1. Anatomical ring data
+
+- A **base directory** containing one or more QWAnamiz output folders  
+
+- Each folder must follow the pattern:
+
+- Inside these folders, the app expects files named:
+
+These files are automatically detected after entering the **Tree ID**
+and selecting the base directory.
+
+------------------------------------------------------------------------
+
+### 2. Reference dendrochronological series
+
+A ring-width file in one of the following formats:
+
+- `.csv` file containing:
+
+- `year` → calendar year  
+
+- `TRW` → ring width values  
+
+- `Tree.ID` → tree identifier (optional but recommended)
+
+- `.rwl` file (standard dendro format)
+
+The user must also specify the **unit scaling** of the TRW values
+(e.g. mm, µm).
+
+------------------------------------------------------------------------
+
+### 3. Tree identifier
+
+- A **Tree ID** must be provided to:
+- match anatomical files  
+- select the corresponding reference series
+
+If no match is found in the dendro file, the app allows manual
+selection.
+
+------------------------------------------------------------------------
+
+## Minimal workflow
+
+1.  Enter **Tree ID**  
+2.  Select **base directory** (QWAnamiz outputs)  
+3.  Load **reference TRW file**  
+4.  Click **“Search files”**  
+5.  Run crossdating
